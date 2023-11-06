@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/juego.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--------------------parte arriba del juego --------------------->
+    <div class="row-header">
+        <div class="jug-opciones" id="J1">
+            <h4>Jugador 1</h4>
+            <div id="btn-jug-1">
+                <button
+                    style="background: url('./images/ficha1.png') center no-repeat; background-size: cover; border-radius: 50%; height: 4em; width: 4em;"
+                    value=""></button>
+                <button
+                    style="background: url('./images/fichaLeon.png') center no-repeat; background-size: cover; border-radius: 50%; height: 4em; width: 4em;"
+                    value=""></button>
+                <button
+                    style="background: url('./images/ficha1.png') center no-repeat; background-size: cover; border-radius: 50%; height: 4em; width: 4em;"
+                    value=""></button>
+                <button
+                    style="background: url('./images/fichaLeon.png') center no-repeat; background-size: cover; border-radius: 50%; height: 4em; width: 4em;"
+                    value=""></button>
+            </div>
+        </div>
+        <div id="row-center">
+            <div class="row">
+                <div class="col-md-12 header-page">
+                    <span class="titulo">4 En Linea</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 header-page">
+                    <button id="start-game" class="btn-jugar">Comenzar / Reiniciar</button>
+                    <div id="timer"> <span id="countdown">  </div>
+                </div>
+            </div>
+        </div>
+            <div class="jug-opciones"   id="J2">
+                <h4>Jugador 2</h4>
+                <div id="btn-jug-2">
+                    <button
+                        style="background: url('./images/ficha2.png') center no-repeat; background-size: cover; border-radius: 50%; height: 4em; width: 4em;"
+                        value="hufflepuff"></button>
+                    <button
+                        style="background: url('./images/fichaPato.png') center no-repeat; background-size: cover; border-radius: 50%; height: 4em; width: 4em;"
+                        value="gryffindor"></button>
+                    <button
+                        style="background: url('./images/ficha2.png') center no-repeat; background-size: cover; border-radius: 50%; height: 4em; width: 4em;"
+                        value="ravenclaw"></button>
+                    <button
+                        style="background: url('./images/fichaPato.png') center no-repeat; background-size: cover; border-radius: 50%; height: 4em; width: 4em;"
+                        value="slytherin"></button>
+                </div>
+            </div>
+        </div>
+        <!----------------------Cartel ganador------------------------------------------------------------>
+        <div class="row info">
+            <div id="winner-info" class="alert winner-message alert-success hide offset-md-1 col-md-10">
+            </div>
+            <div id="draw-info" class=" alert winner-message alert-danger hide offset-md-1 col-md-10">
+                Empatados!
+            </div>
+        </div>
+
+
+
+
+
+        <!----------------------Canvas------------------------------------------------------------>
+
+
+        <div class="row">
+            <div class="col-md-8 offset-md-1 row">
+                <canvas id="board" width="1100" height="550"></canvas>
+            </div>
+        </div>
+
+        <!---------------------------------------------------------------------------------->
+        <script src="./js/juego/Board.js"></script>
+        <script src="./js/juego/FourInLine.js"></script>
+        <script src="./js/juego/Game.js"></script>
+        <script src="./js/juego/Player.js"></script>
+        <script src="./js/juego/Token.js"></script>
+
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <title>Loguin</title>
+</head>
+
+<body>
+    <div class="container-loguin ">
+
+        <header class="container-logo">
+
+            <img class="logo" src="./images/logo-corona.png" alt="logo">
+            <img class="letras-logo" src="./images/Mil-juegos.png" alt="letras-logo">
+        </header>
+
+        <section class="form-loguin">
+            <h2 class=titulo-loguin>Iniciar sesión</h2>
+            <button id="btn-google">
+                <div id="interior-btn-google">
+                    <img id="icono-google" src="./images/Icono-google.png" alt="icono-google">
+                    <a href="loading.html" id="letra-google" rel="noopener noreferrer">Continuar con Google</a>
+
+                </div>
+            </button>
+
+            <button id="btn-facebook">
+                <div id="interior-btn-face">
+                    <img id="icono-face" src="./images/icono-facebook.png" alt="icono-google">
+                    <a href="loading.html" id="letra-face" rel="noopener noreferrer">Continuar con Facebook</a>
+
+                </div>
+            </button>
+            <img class="linea" src="./images/Linea.png" alt="linea">
+
+            <h2 class=titulo-loguin>Con tu usuario y contraseña</h2>
+            <div class="loguearse">
+                <label class="letra-loguin">Email *</label>
+                <input class="log" type="email" placeholder="Email" required>
+                <label class="letra-loguin">Contraseña *</label>
+                <input class="log" type="contraseña" placeholder="Contraseña" required>
+                
+                <button id="btn-loguin" class=" btn-grande btn-grande-activado  ">
+                    <a href="loading.html" class="btn-log letra-btn-grande letra-btn-grande-activado" rel="">Iniciar
+                        sesión</a>
+                </button>
+
+                    <!-- --------------------confetis------------ -->
+
+                <div id="contenedorConfeti">
+                  
+                </div>
+
+            </div>
+            <img class="linea" src="./images/Linea.png" alt="linea">
+            <h2 class=titulo-loguin>Aún no tenés cuenta?</h2>
+
+            <button
+                class=" btn-grande  btn-grande-activado btn-loguearse   letra-btn-grande  letra-btn-grande-activado">
+                <a id="pag-reg" href="registro.html" class="btn-log letra-btn-grande letra-btn-grande-activado"
+                    rel="">Registrate</a>
+
+            </button>
+        </section>
+
+        <footer class="div-footer">
+            <div id="redes-footer">
+                <div id="logo-footer">
+                    <img src="./images/logo-corona.png" alt="logo">
+                    <img id="letra-footer" src="./images/Mil-juegos.png" alt="letras-logo">
+
+                    <h2 id="texto-redes-footer">Seguinos en nuestras redes</h2>
+                    <div id="iconos-redes-footer">
+                        <img src="./images/Iconos-redes.png" alt="iconos-redes">
+                    </div>
+                </div>
+            </div>
+            <div id="centro-footer">
+                <div id="soporte-ayuda-footer">
+                    <div id="soporte-footer">
+                        <h2>Soporte</h2>
+                        <p class="body-bold">Tel: 0810 222 7723</p>
+                        <p class="body-bold">Mail: soporte@miljuegos.com</p>
+                    </div>
+                    <div id="ayuda-footer">
+                        <h2>Ayuda</h2>
+                        <p class="body-bold">FAQ</p>
+                        <p class="body-bold">Tutoriales</p>
+                        <p class="body-bold">Acerca de nosotros</p>
+
+                    </div>
+                </div>
+                <div id="terminos-footer">
+                    <img src="./images/terminos.png" alt="terminos">
+                </div>
+            </div>
+            <div id="categorias-footer">
+                <h2 id="cat-footer">Categorías de juegos</h2>
+                <img id="iconos-cat-footer" src="./images/categorias.png" alt="iconos-categorias">
+
+
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="./js/loguin.js"></script>
+
+</html>

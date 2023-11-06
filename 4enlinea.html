@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type='text/css'>
+    <link rel="stylesheet" href="css/juego.css" type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+
+    <title>4enlinea</title>
+</head>
+
+<body id="body-juego">
+    <header>
+        <div class="container">
+            <div class="header-container">
+                <div class="flex">
+                    <button id="hamb" class="btn-icono "><img src=".//images/home/Boton-Hamburguesa.jpg"
+                            alt="Boton Hamburguesa"></button>
+                </div>
+                <nav class="menu-hamb">
+                    <ul>
+                        <li><a href="#">Recomendados</a></li>
+                        <li><a href="#">Favoritos</a></li>
+                        <li><a href="#">Deportes</a></li>
+                        <li><a href="#">Carreras</a></li>
+                        <li><a href="#">Puzzles</a></li>
+                        <li><a href="#">Acción</a></li>
+                    </ul>
+                </nav>
+                <div class="flex">
+                    <a href="home.html">
+                        <img class="logo-img" src="images/home/Logo.png" alt="logo">
+                    </a>
+                </div>
+
+                <div id="carrito-perfil" class="flex">
+                    <button id="carrito" class="carrito"><img src=".//images/home/carrito.png" alt="carrito"></button>
+                    <button id="sesion" class="btn-icono"><img src=".//images/home/Avatar.png" alt="Sesion"></button>
+                </div>
+                <nav class="menu-usuario">
+                    <ul>
+                        <div class="items-usuario">
+                            <li> <a href="#">Mis Compras</a> </li>
+                            <img class="img-usuario" src=".//images//home/Icono Mis compras.png" alt="">
+                        </div>
+                        <div class="items-usuario">
+                            <li> <a href="#">Mis Favoritos </a> </li>
+                            <img class="img-usuario" src=".//images//home/Icono Mis favoritos.png" alt="">
+                        </div>
+                        <div class="items-usuario">
+                            <li> <a href="#">Mi Carrito </a> </li>
+                            <img class="img-usuario" src="images/home/Icono Mi Carrito.png" alt="">
+                        </div>
+                        <div class="items-usuario">
+                            <li> <a href="#">Mi cuenta </a> </li>
+                            <img class="img-usuario" src=".//images//home/Icono Mi cuenta.png" alt="">
+                        </div>
+                        <div class="items-usuario">
+                            <li> <a href="#">Cerrar sesión</a> </li>
+                            <img class="img-usuario" src=".//images//home/Icono Cerrar Sesion.png" alt="">
+                        </div>
+                    </ul>
+                </nav>
+                <nav class="menu-carrito">
+                    <ul>
+                        <div class="items-usuario">
+                            <li> <a href="#">Carrito de compras </a> </li>
+                            <img class="img-usuario" src="images/home/Icono Mi Carrito.png" alt="carrito">
+                        </div>
+                        <div class="items-usuario">
+                            <li> Producto </li>
+                            <p>SubTotal</p>
+                        </div>
+                        <p>El carrito esta vacío</p>
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-----------------------------breadcrumb--------------------------->
+    <div id="breadcrumb">
+        <p class="body-bold"><span><a id="home" href="home.html">Home</a> </span><span> <img id="vector-bread"
+                    src="./images/bread.png" alt="bread"></span><span id="bread">4 en Línea</span></p>
+    </div>
+    
+    
+    
+    <!-----------------------------container juego--------------------------->
+    <section id="container-juego">
+        <div id="container-juego-2" >
+
+            <div id="game-settings" style="display: block;"> 
+                <form action="" id="game-settings-form">
+                    
+                    <section class="board-settings">
+                        <h2>Elige el tablero</h2>
+                        <div>
+                            <input type="radio" name="board-lines" value="4 en línea" id="radio-friendly" checked>
+                            <label for="radio-friendly">4 en linea</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="board-lines" value="5 en línea" id="radio-brave">
+                            <label for="radio-brave">5 en linea</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="board-lines" value="6 en línea" id="radio-clever">
+                            <label for="radio-clever">6 en linea</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="board-lines" value="7 en línea" id="radio-ambicious">
+                            <label for="radio-ambicious">7 en linea</label>
+                        </div>
+                    </section>
+                    <section class="piece-settings">
+                        <h2>Selecciona la ficha </h2>
+                        <div>
+                            <div ><h3 id="nameP1">Jugador 1 </h3></div>
+                            <div id="player-1-piece-btns">
+                              <!--  <button src="./images/fichas/Pato1.png"
+                                    style="background: url('./images/fichas/Pato1.png') center no-repeat; background-size: cover; border-radius: 50%; height: 4em; width: 4em;"
+                                    value="p1"></button>
+                                <button  src="./images/fichas/Pato2.png"
+                                    style="background: url('./images/fichas/Pato2.png') center no-repeat; background-size: cover; border-radius: 50%; height: 4em; width: 4em;"
+                                    value="p2"></button>
+                                <button  src="./images/fichas/Pato3.png"
+                                    style="background: url('./images/fichas/Pato3.png') center no-repeat; background-size: cover; border-radius: 50%; height: 4em; width: 4em;"
+                                    value="p3"></button>
+                                <button  src="./images/fichas/Pato4.png"
+                                    style="background: url('./images/fichas/Pato4.png') center no-repeat; background-size: cover; border-radius: 50%; height: 4em; width: 4em;"
+                                    value="p4"></button> -->
+
+                                    <label class="custom-radio">
+                                        <input type="radio" style="display: none;" name="f1" value="./images/fichas/Pato1.png" id="f1">
+                                        <img src="./images/fichas/Pato1.png" alt="Opción 5">
+                                    </label>
+                                    <label class="custom-radio">
+                                        <input type="radio"style="display: none;" name="f1" value="./images/fichas/Pato2.png" id="f2">
+                                        <img src="./images/fichas/Pato2.png" alt="Opción 6">
+                                    </label>
+                                    <label class="custom-radio">
+                                        <input type="radio"style="display: none;" name="f1" value="./images/fichas/Pato3.png" id="f3">
+                                        <img src="./images/fichas/Pato3.png" alt="Opción 7">
+                                    </label>
+                                    <label class="custom-radio">
+                                        <input type="radio" style="display: none;"name="f1" value="./images/fichas/Pato4.png" id="f4">
+                                        <img src="./images/fichas/Pato4.png" alt="Opción 8">
+                                    </label>
+
+                            </div>
+                        </div>
+                        <div>
+                            <div><h3  id="nameP2" >Jugador 2</h3> </div>
+                            <div id="player-2-piece-btns">
+                                <!--<button  src="./images/fichas/Milei1.png"
+                                style="background: url('./images/fichas/Milei1.png') center no-repeat; background-size: cover; border-radius: 50%; height: 4em; width: 4em;"
+                                value="p1"></button>
+                            <button  src="./images/fichas/Milei2.png"
+                                style="background: url('./images/fichas/Milei2.png') center no-repeat; background-size: cover; border-radius: 50%; height: 4em; width: 4em;"
+                                value="p2"></button>
+                            <button  src="./images/fichas/Milei3.png"
+                                style="background: url('./images/fichas/Milei3.png') center no-repeat; background-size: cover; border-radius: 50%; height: 4em; width: 4em;"
+                                value="p3"></button>
+                            <button  src="./images/fichas/Milei4.png"
+                                style="background: url('./images/fichas/Milei4.png') center no-repeat; background-size: cover; border-radius: 50%; height: 4em; width: 4em;"
+                                value="p4"></button>-->
+                                <label class="custom-radio">
+                                    <input type="radio"  style="display: none;" name="f2" value="./images/fichas/Milei1.png" id="f1">
+                                    <img src="./images/fichas/Milei1.png" alt="Opción 1">
+                                </label>
+                                <label class="custom-radio">
+                                    <input type="radio" style="display: none;" name="f2" value="./images/fichas/Milei2.png" id="f2">
+                                    <img src="./images/fichas/Milei2.png" alt="Opción 2">
+                                </label>
+                                <label class="custom-radio">
+                                    <input type="radio" style="display: none;" name="f2" value="./images/fichas/Milei3.png" id="f3">
+                                    <img src="./images/fichas/Milei3.png" alt="Opción 3">
+                                </label>
+                                <label class="custom-radio">
+                                    <input type="radio" style="display: none;" name="f2" value="./images/fichas/Milei4.png" id="f4">
+                                    <img src="./images/fichas/Milei4.png" alt="Opción 4">
+                                </label>
+                            </div>
+                        </div>
+                    </section>
+                </form>
+                <div class="msg"></div>
+            </div>
+            <figure id="img-juego" class="ocultar" style.display = 'block'>
+                
+                <img src="./images/4 en linea.png" alt="4 en linea">
+                <div class="settings-confirm">
+                    <button id="btn-juego"
+                        class="btn-grande btn-grande-activado letra-btn-grande  letra-btn-grande-activado playSettingsBtn " id="play-settings-btn">Jugar
+                    </button>
+                </div>
+            </figure>
+        </div>
+
+
+  <!-----------------------------container 4 en linea EN EJECUCION----------------------------------------------------------->
+        <div id="container-juego-2 container-canvas"  style="display: none;" class=" ocultarCanvas">
+           <div class="row-header">
+                <div class="jug-opciones" id="J1">
+                    <h2>Jugador 1</h2>
+                </div>
+                <div id="row-center">
+                    <div class="row">
+                        <div class="col-md-12 header-page">
+                            <button id="start-game" class="btn-jugar"> Reiniciar</button>
+                            <div id="timer"> <span id="countdown"></span> </div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="jug-opciones"   id="J2">
+                        <h2>Jugador 2</h2>
+                       <!-- <div id="btn-jug-2">
+                           
+                        </div>-->
+                    </div>
+                </div>
+
+                
+                <!----------------------Cartel ganador------------------------------------------------------------>
+                <div class="row info">
+                    <div id="winner-info" class="alert winner-message alert-success hide offset-md-1 col-md-10">
+                    </div>
+                    <div id="draw-info" class=" alert winner-message alert-danger hide offset-md-1 col-md-10">
+                        Empatados!
+                    </div>
+                </div>
+
+
+            <div class="row tablero" >
+                <div class="col-md-8 offset-md-1 row">
+                    <canvas id="board" width="1080" height="550" ></canvas><!--1080 y 550-->
+                </div>
+                    
+            </div>
+
+        </div>
+
+
+
+        <div id="menu-juego">
+            <div id="control-juego">
+                <img id="btn-jugar" src="./images/Control.png" alt="control-juego">
+            </div>
+            <div id="div-instrucciones-oculto" class="instruc-oculto">
+                <h3>Cómo jugar </h3>
+                <br>
+                <p class="body-bold">
+                    Consiste en colocar 4 fichas de tu bando consecutivas.
+                    Puede ser en columna, fila o diagonal.
+                    <br>
+                    Click izquierdo -> seleccionar ficha
+                    <br>
+                    Arrastrar mouse -> mover ficha
+                    <br>
+                    Soltar click izquierdo -> colocar ficha
+                </p>
+            </div>
+            <div id="agrandar-juego">
+                <img src="./images/Agrandar.png" alt="agrandar-juego">
+            </div>
+        </div>
+        <div id="desc-juego">
+            <figure id="img-juego-2">
+                <img src="./images/juego.png" alt="img-juego">
+            </figure>
+            <div id="descrip">
+                <h3>Descripción</h3>
+                <div id="desc-juego-2" class="body">
+                    <p>En este 4 en Línea “Batalla Política",
+                        la emoción de la política argentina cobra vida
+                        de una manera completamente nueva y emocionante.
+                        Los jugadores encarnan a dos de los políticos más
+                        influyentes de Argentina: Milei y Bullrich.
+                    </p>
+                    <br>
+                    <h3 id="como-jugar">Cómo jugar</h3>
+                    <p class="body">
+                        El objetivo del juego es lograr conectar
+                        4 fichas iguales de manera vertical, horizontal
+                        o diagonal.
+                        <br>
+                        Click izquierdo -> seleccionar ficha
+                        <br>
+                        Arrastrar mouse -> mover ficha
+                        <br>
+                        Soltar click izquierdo -> colocar ficha
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="videos-juego">
+            <div id=container-videos-1>
+                <h3 id="titulo-video" class="h3  ">Videos sobre el juego</h3>
+                <figure id="imagen-video-juego">
+                    <img src="./images/video1.png" alt="Video Juego">
+                    <img id="btn-play" src="./images/Icono Play.png" alt="boton play">
+                </figure>
+            </div>
+            <div id="container-videos-2">
+                <div id="video-compartir">
+                    <figure id="imagen-video-juego-2">
+                        <img src="./images/video2.png" alt="video juego">
+                        <img id="btn-play-2" src="./images/Icono Play.png" alt="boton play">
+                    </figure>
+                    <div id="compartir">
+                        <h3 id="titulo-compartir">Compartí este juego</h3>
+                        <div class="iconos-compartir">
+                            <img class="img-redes-comp" src="./images/instagram (6).png" alt="">
+                            <img class="img-redes-comp" src="./images/facebook.png" alt="facebook">
+                            <img class="img-redes-comp" src="./images/whatsapp.png" alt="whatsapp">
+                            <img class="img-redes-comp" src="./images/gorjeo.png" alt="twiter">
+                        </div>
+                        <p id="link-comp" class="texto-botones">www.miljuegos.com/recomendados-para-vos/4enlinea</p>
+
+                        <!---       <img id="iconos-compartir" src="./images/Iconos-compartir.png" alt="iconos compartir">
+                            <p id="link-comp" class="body-bold">www.miljuegos.com/recomendados-para-vos/4enlinea</p>-->
+                        <div id="botones-comp">
+
+                            <button id="btn-compartir"
+                                class="btn-grande btn-grande-activado  texto-botones letra-btn-grande letra-btn-grande-activado  ">Copiar
+                                enlace</button>
+                            <button id="btn-cancelar-comp"
+                                class=" btn-grande  btn-grande-desactivado  letra-btn-grande  texto-botones  letra-btn-grande-desactivado">Cancelar</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="links-juegos">
+                    <h3 id="tit-mas-juegos">Más juegos</h3>
+                    <p id="parr-links-juegos" class="body">Para más diversión y una experiencia única, explorá nuestra
+                        selección de <span class="body-bold">juegos de acción</span> y <span class="body-bold">juegos de
+                            carreras</span>.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="container-comentarios">
+            <div id="form-coment">
+                <div id="input-coment">
+                    <input id="input-coment-2" placeholder="Dejanos tu comentario">
+
+
+                    <div id="avatar-conf">
+                        <img id="avatar-input" src="./images/Avatar.png" alt="avatar">
+                    </div>
+                </div>
+                <input id="com-exp" type="text" placeholder="Contanos tu experiencia, para ayudarnos a mejorar">
+                <button id="btn-enviar-opinion"
+                    class=" enviar-animacion  btn-grande texto-botones  btn-grande-activado   letra-btn-grande   letra-btn-grande-activado ">Enviar</button>
+            </div>
+            <div id="container-opiniones">
+                <h3 id="titulo-opiniones">Opiniones del juego</h3>
+                <div id="cont-coment">
+                    <div id="cont-coment-scroll">
+                        <div class="input-coment-usuarios">
+                            <div id="letra-input-coment">
+                                <p class="body">Tremendo!! Quién ganará en la vida real?</p>
+                            </div>
+                            <div id="avatar-conf">
+                                <img id="avatar-input" src="./images/Avatar2.png" alt="avatar">
+                            </div>
+                        </div>
+                        <div class="input-coment-usuarios">
+                            <div id="letra-input-coment">
+                                <p class="body">Me encantó el juego. No puedo parar!</p>
+                            </div>
+                            <div id="avatar-conf">
+                                <img id="avatar-input" src="./images/Avatar3.png" alt="avatar">
+                            </div>
+                        </div>
+                        <div class="input-coment-usuarios">
+                            <div id="letra-input-coment">
+                                <p class="body">Esta sensacional, es tremenda adicción</p>
+                            </div>
+                            <div id="avatar-conf">
+                                <img id="avatar-input" src="./images/Avatar4.png" alt="avatar">
+                            </div>
+                        </div>
+                        <div class="input-coment-usuarios">
+                            <div id="letra-input-coment">
+                                <p class="body">No me gustó. Me lo imaginaba más dinámico.</p>
+                            </div>
+                            <div id="avatar-conf">
+                                <img id="avatar-input" src="./images/Avatar5.png" alt="avatar">
+                            </div>
+                        </div>
+                        <div class="input-coment-usuarios">
+                            <div id="letra-input-coment">
+                                <p class="body">Esta terrible, totalmente actualizado.</p>
+                            </div>
+                            <div id="avatar-conf">
+                                <img id="avatar-input" src="./images/Avatar6.png" alt="avatar">
+                            </div>
+                        </div>
+                        <div class="input-coment-usuarios">
+                            <div id="letra-input-coment">
+                                <p class="body">Tenía expectativas y fueron superadas.</p>
+                            </div>
+                            <div id="avatar-conf">
+                                <img id="avatar-input" src="./images/Avatar7.png" alt="avatar">
+                            </div>
+                        </div>
+                        <div class="input-coment-usuarios">
+                            <div id="letra-input-coment">
+                                <p class="body">Mmmm, esperaba otra cosa, me desilucionó.</p>
+                            </div>
+                            <div id="avatar-conf">
+                                <img id="avatar-input" src="./images/Avatar8.png" alt="avatar">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-juego">
+        <footer class="div-footer">
+            <div id="redes-footer">
+                <div id="logo-footer">
+                    <img src="./images/logo-corona.png" alt="logo">
+                    <img id="letra-footer" src="./images/Mil-juegos.png" alt="letras-logo">
+
+                    <h2 id="texto-redes-footer">Seguinos en nuestras redes</h2>
+                    <div id="iconos-redes-footer">
+                        <img src="./images/Iconos-redes.png" alt="iconos-redes">
+                    </div>
+                </div>
+            </div>
+            <div id="centro-footer">
+                <div id="soporte-ayuda-footer">
+                    <div id="soporte-footer">
+                        <h2>Soporte</h2>
+                        <p class="body-bold">Tel: 0810 222 7723</p>
+                        <p class="body-bold">Mail: soporte@miljuegos.com</p>
+                    </div>
+                    <div id="ayuda-footer">
+                        <h2>Ayuda</h2>
+                        <p class="body-bold">FAQ</p>
+                        <p class="body-bold">Tutoriales</p>
+                        <p class="body-bold">Acerca de nosotros</p>
+
+                    </div>
+                </div>
+                <div id="terminos-footer">
+                    <img src="./images/terminos.png" alt="terminos">
+                </div>
+            </div>
+            <div id="categorias-footer">
+                <h2 id="cat-footer">Categorías de juegos</h2>
+                <img id="iconos-cat-footer" src="./images/categorias.png" alt="iconos-categorias">
+
+
+            </div>
+        </footer>
+    </div>
+    <!--<script src="./js/script.js"></script>-->
+    <script src="./js/menu.js"></script>
+
+
+    <script src="./js/juego/Main.js"></script>
+
+<script src="./js/juego/Game.js"></script>
+    <script src="./js/juego/Board.js"></script>
+
+    <!--<script src="./js/juego/SettingsJuego.js"></script>
+    <script src="./js/juego/FourInLine.js"></script>-->
+
+
+    
+    <script src="./js/juego/Player.js"></script>
+    <script src="./js/juego/Token.js"></script>
+    <script src="./js/juego/cargarTablero.js"></script>
+    
+</body>
+
+</html>
+

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <title>Registro</title>
+</head>
+
+<body>
+    <div class="container-registro">
+
+        <header id="container-header-registro">
+            <div class="container-logo-registro">
+                <img class="logo" src="./images/logo-corona.png" alt="logo">
+                <img class="letras-logo" src="./images/Mil-juegos.png" alt="letras-logo">
+            </div>
+            <img id="progreso" src="./images/Progreso.png" alt="barra-progreso">
+        </header>
+
+        <section class="registro">
+            <div id="encabezado-datos-personales">
+                <h2 class="letra-reg">Datos personales</h2>
+                <img id="linea-reg" src="./images/Line 1.png" alt="linea">
+            </div>
+            <div id="datos-personales">
+                <label class="letras-label">Nombre *</label>
+                <br>
+                <input class="input-reg" type="text" name="nombre" placeholder="Nombre" required>
+                <label class="letras-label">Apellido *</label>
+                <br>
+                <input class="input-reg" type="text" name="apellido" placeholder="Apellido" required>
+                <label class="letras-label">Nombre de Usuario</label>
+                <br>
+                <input class="input-reg" type="text" name="nombre de usuario" placeholder="Nombre de Usuario">
+                <label class="letras-label">Edad *</label>
+                <br>
+                <input class="input-reg" type="number" name="edad" placeholder="Edad" required>
+            </div>
+            <div id="encabezado-datos">
+                <h2 class="letra-reg">Datos de la cuenta</h2>
+                <img id="linea-reg" src="./images/Line 1.png" alt="linea">
+            </div>
+            <div id="datos-cuenta">
+                <label class="letras-label-cta">Email *</label>
+                <input class="input-reg-cta" type="email" name="email" placeholder="Email" required>
+                <label class="letras-label-cta">Contraseña *</label>
+
+                <input class="input-reg-cta" type="password" name="contraseña" placeholder="Contraseña" required>
+                
+                <label class="letras-label-cta">Confirmar contraseña *</label>
+                <input class="input-reg-cta" type="password" name="nombre de usuario" placeholder="Confirmar contraseña"
+                    required>
+                    
+            </div>
+            <div id="registracion">
+                <img id="img-captcha" src="./images/newCaptchaAnchor 1.png" alt="captcha">
+              <button id="btn-reg" class="  btn-grande btn-grande-activado  letra-btn-grande  letra-btn-grande-activado ">Registrate
+             
+                </button>
+            </div>
+            
+                    <!-- --------------------confetis------------ -->
+
+                    <div id="contenedorConfeti">
+                        <h2 id="reg-exito">Registro exitoso! Redirigiendo al loguin</h2>
+                    </div>
+
+        </section>
+
+        <footer class="div-footer">
+            <div id="redes-footer">
+                <div id="logo-footer">
+                    <img src="./images/logo-corona.png" alt="logo">
+                    <img id="letra-footer" src="./images/Mil-juegos.png" alt="letras-logo">
+
+                    <h2 id="texto-redes-footer">Seguinos en nuestras redes</h2>
+                    <div id="iconos-redes-footer">
+                        <img src="./images/Iconos-redes.png" alt="iconos-redes">
+                    </div>
+                </div>
+            </div>
+            <div id="centro-footer">
+                <div id="soporte-ayuda-footer">
+                    <div id="soporte-footer">
+                        <h2>Soporte</h2>
+                        <p class="body-bold">Tel: 0810 222 7723</p>
+                        <p class="body-bold">Mail: soporte@miljuegos.com</p>
+                    </div>
+                    <div id="ayuda-footer">
+                        <h2>Ayuda</h2>
+                        <p class="body-bold">FAQ</p>
+                        <p class="body-bold">Tutoriales</p>
+                        <p class="body-bold">Acerca de nosotros</p>
+
+                    </div>
+                </div>
+                <div id="terminos-footer">
+                    <img src="./images/terminos.png" alt="terminos">
+                </div>
+            </div>
+            <div id="categorias-footer">
+                <h2 id="cat-footer">Categorías de juegos</h2>
+                <img id="iconos-cat-footer" src="./images/categorias.png" alt="iconos-categorias">
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="./js/registro.js"></script>
+
+</html>  
