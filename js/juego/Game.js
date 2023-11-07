@@ -3,7 +3,10 @@ class Game{
     constructor(canvas, filas, columnas, radio){
         this.canvas = canvas;
         this.context = canvas.getContext('2d');
-        this.board = new Board(this.context, filas, columnas, radio);
+        this.filas = filas;
+        this.columnas = columnas;
+        this.radio = radio;
+        this.board = new Board(this.context, this.filas, this.columnas, this.radio);
         this.player1 = new Player (this.context, 'Jugador 1', 1);
         this.player2 = new Player (this.context, 'Jugador 2', 2);
         this.tokens = [];
@@ -22,16 +25,16 @@ class Game{
     drawInitialTokens(){
         let xInitialPositionP1 = 50;
         let xInitialPositionP2 = 920;
-        this.drawPlayerToken(xInitialPositionP1, 'p1', this.player1);
-        this.drawPlayerToken(xInitialPositionP2, 'p2', this.player2);
+        this.drawPlayerToken(xInitialPositionP1, 'p1', this.player1, this.radio);
+        this.drawPlayerToken(xInitialPositionP2, 'p2', this.player2, this.radio);
     }
     //dibujas las fichas del jugador.
-    drawPlayerToken(xInitial, param, jugador) {
+    drawPlayerToken(xInitial, param, jugador, radio) {
         let tmpY = 130;
         for (let row = 0; row < 7; row++) {
             let tmpX = xInitial;
             for(let col = 0; col < 3; col++) {
-                let token = new Token (tmpX, tmpY, param, jugador);
+                let token = new Token (tmpX, tmpY, param, jugador, radio);
                 token.setContext(this.context);
                 this.tokens.push(token);
                 tmpX += 65;
